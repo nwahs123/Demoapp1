@@ -35,7 +35,7 @@ export default function Home() {
               <h2 className="text-sm uppercase tracking-[0.3em] text-[#A68B6C]">
                 Lynk Fragrances
               </h2>
-              <h1 className="text-5xl md:text-7xl font-serif text-[#2D2D2D]">
+              <h1 className="text-4xl md:text-7xl font-serif text-[#2D2D2D]">
                 The Scent of You
               </h1>
             </div>

@@ -62,7 +62,7 @@ export default function ResultView({ scores }: ResultViewProps) {
                 </h2>
 
                 {/* Tarot Card Display */}
-                <div className="relative w-64 aspect-[2/3] rounded-lg overflow-hidden shadow-xl border-4 border-[#A68B6C]/20 bg-[#F9F9F7]">
+                <div className="relative w-48 md:w-64 aspect-[2/3] rounded-lg overflow-hidden shadow-xl border-4 border-[#A68B6C]/20 bg-[#F9F9F7]">
                     <img
                         src={result.tarotImage}
                         alt={result.title}
@@ -71,7 +71,7 @@ export default function ResultView({ scores }: ResultViewProps) {
                     <div className="absolute inset-0 border border-[#A68B6C]/30 m-2 rounded-sm pointer-events-none" />
                 </div>
 
-                <h1 className="text-4xl font-serif text-[#2D2D2D] mt-4">{result.title}</h1>
+                <h1 className="text-3xl md:text-4xl font-serif text-[#2D2D2D] mt-4">{result.title}</h1>
                 <p className="text-lg font-light leading-relaxed text-[#2D2D2D]/80 max-w-lg">
                     {result.desc}
                 </p>
@@ -131,7 +131,7 @@ export default function ResultView({ scores }: ResultViewProps) {
                     animate={{ opacity: 1, y: 0 }}
                     className="space-y-8"
                 >
-                    <div className="relative aspect-square w-full bg-[#F0F0F0] overflow-hidden rounded-sm">
+                    <div className="relative aspect-square w-full max-w-[200px] mx-auto bg-[#F0F0F0] overflow-hidden rounded-sm">
                         {/* Placeholder for product image */}
                         <img
                             src={result.productImage}

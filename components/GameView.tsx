@@ -50,7 +50,7 @@ export default function GameView({ onComplete }: GameViewProps) {
                         {currentQuestion.scenario}
                     </h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-2 gap-3 md:gap-6">
                         {currentQuestion.choices.map((choice, index) => (
                             <button
                                 key={index}
@@ -64,11 +64,11 @@ export default function GameView({ onComplete }: GameViewProps) {
                                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                     />
                                 </div>
-                                <div className="p-6 w-full flex items-center justify-between gap-4">
-                                    <span className="relative z-10 text-lg font-sans font-light tracking-wide group-hover:text-[#A68B6C] transition-colors">
+                                <div className="p-3 md:p-6 w-full flex items-center justify-between gap-2 md:gap-4">
+                                    <span className="relative z-10 text-sm md:text-lg font-sans font-light tracking-wide group-hover:text-[#A68B6C] transition-colors line-clamp-2">
                                         {choice.text}
                                     </span>
-                                    <ChevronRight className="w-5 h-5 text-[#A68B6C] opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1 shrink-0" />
+                                    <ChevronRight className="w-4 h-4 md:w-5 md:h-5 text-[#A68B6C] opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1 shrink-0" />
                                 </div>
                             </button>
                         ))}
