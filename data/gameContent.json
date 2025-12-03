@@ -1,0 +1,145 @@
+{
+  "gameTitle": "THE SCENT OF YOU",
+  "questions": [
+    {
+      "id": "q1_entrance",
+      "scenario": "You stand at the edge of a sunlit forest. The path ahead splits. Which way calls to you?",
+      "choices": [
+        {
+          "text": "A sun-drenched meadow path lined with wildflowers.",
+          "image": "/images/q1_meadow.jpg",
+          "nextId": "q2_discovery",
+          "impact": {
+            "fresh": 2,
+            "warm": 0
+          }
+        },
+        {
+          "text": "A shaded trail beneath ancient, mossy oaks.",
+          "image": "/images/q1_forest.jpg",
+          "nextId": "q2_discovery",
+          "impact": {
+            "fresh": 0,
+            "warm": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2_discovery",
+      "scenario": "Deeper in, you find a small stream. The water flows over smooth stones. What do you do?",
+      "choices": [
+        {
+          "text": "Dip your hands in the cool, clear water.",
+          "image": "/images/q2_stream_cool.jpg",
+          "nextId": "q3_encounter",
+          "impact": {
+            "fresh": 2,
+            "warm": 0
+          }
+        },
+        {
+          "text": "Sit on a warm rock and listen to the flow.",
+          "image": "/images/q2_stream_warm.jpg",
+          "nextId": "q3_encounter",
+          "impact": {
+            "fresh": 0,
+            "warm": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3_encounter",
+      "scenario": "A gentle breeze stirs the leaves. You spot something in the distance.",
+      "choices": [
+        {
+          "text": "A hidden garden of white jasmine and citrus trees.",
+          "image": "/images/q3_garden.jpg",
+          "nextId": "q4_evening",
+          "impact": {
+            "fresh": 2,
+            "warm": 0
+          }
+        },
+        {
+          "text": "A cozy wooden cabin with smoke rising from the chimney.",
+          "image": "/images/q3_cabin.jpg",
+          "nextId": "q4_evening",
+          "impact": {
+            "fresh": 0,
+            "warm": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4_evening",
+      "scenario": "The sun begins to set, painting the sky in gold and violet. The air changes.",
+      "choices": [
+        {
+          "text": "It turns crisp and cool, carrying the scent of pine.",
+          "image": "/images/q4_sunset_pine.jpg",
+          "nextId": "q5_night",
+          "impact": {
+            "fresh": 2,
+            "warm": 0
+          }
+        },
+        {
+          "text": "It turns warm and heavy with the scent of blooming night flowers.",
+          "image": "/images/q4_sunset_flowers.jpg",
+          "nextId": "q5_night",
+          "impact": {
+            "fresh": 0,
+            "warm": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "q5_night",
+      "scenario": "Stars appear above. You find a place to rest. What surrounds you?",
+      "choices": [
+        {
+          "text": "Open sky, moonlight, and the sound of wind in the grass.",
+          "image": "/images/q5_moonlight.jpg",
+          "nextId": "end",
+          "impact": {
+            "fresh": 2,
+            "warm": 0
+          }
+        },
+        {
+          "text": "The crackle of a fire, soft blankets, and silence.",
+          "image": "/images/q5_fire.jpg",
+          "nextId": "end",
+          "impact": {
+            "fresh": 0,
+            "warm": 2
+          }
+        }
+      ]
+    }
+  ],
+  "outcomes": [
+    {
+      "id": "result_fresh",
+      "title": "THE MINDFUL NATURALIST",
+      "desc": "You crave clarity and open spaces. Your sanctuary is an extension of the outdoors—clean, vibrant, and uncomplicated.",
+      "productImage": "/images/placeholder-candle-fresh.jpg",
+      "tarotImage": "/images/tarot_fresh_naturalist.jpg",
+      "productName": "White Tea & Ginger Candle",
+      "condition": "fresh"
+    },
+    {
+      "id": "result_warm",
+      "title": "THE QUIET SOUL",
+      "desc": "You find beauty in depth and stillness. Your sanctuary is built on comfort, warmth, and cherished memories.",
+      "productImage": "/images/placeholder-candle-warm.jpg",
+      "tarotImage": "/images/tarot_warm_soul.jpg",
+      "productName": "Santal & Amber Diffuser",
+      "condition": "warm"
+    }
+  ]
+}
